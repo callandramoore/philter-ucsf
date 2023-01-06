@@ -863,7 +863,7 @@ class Philter:
             contents.append("\" end=\"")
             contents.append(str(tagdata['phi'][i]['stop']))
             contents.append("\" text=\"")
-            contents.append(tagdata['phi'][i]['word'])
+            contents.append(tagdata['phi'][i]['word'].replace('>','&gt;').replace('<','&lt;').replace('&', '&amp;').replace('"', '&quot;').replace("'", '&apos;'))
             contents.append("\" TYPE=\"")
             contents.append(phi_type)
             contents.append("\" comment=\"\" />\n")

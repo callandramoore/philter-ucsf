@@ -1,6 +1,6 @@
 import argparse
 import distutils.util
-import re 
+import regex as re
 import pickle
 from philter import Philter
 import gzip
